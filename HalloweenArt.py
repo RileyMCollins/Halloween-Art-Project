@@ -1,20 +1,33 @@
+#-----import statements-----
+import turtle as trtl
+import random as rand
+t = trtl.Turtle()
+t.shapesize(5)
+t.fillcolor("white")
+xpos = 0
+ypos = 0
+t.penup()
+wn = trtl.Screen()
+wn.bgpic("universe.gif")
 
-import turtle
-t = turtle.Turtle()
-wn = turtle.Screen()
-t.turtlesize(5)
 
-wn.mainloop()
 
-def run():
-  t.penup()
+
+
+def change_pos():
   t.forward(100)
+  num1 = rand.randint(1, 360)
+  t.left(num1)
+
+def click(x, y):
+  change_pos()
 
 
-def click(x,y):
-  run()
 
 if t.onclick(click):
-  run()
+  change_pos()
+
+
+
 
 wn.mainloop()
