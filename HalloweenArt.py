@@ -9,6 +9,8 @@ ypos = 0
 t.penup()
 wn = trtl.Screen()
 wn.bgpic("universe.gif")
+wn.addshape("ezgif.com-gif-maker.gif")
+t.shape("ezgif.com-gif-maker.gif")
 
 
 
